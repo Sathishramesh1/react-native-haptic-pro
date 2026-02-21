@@ -1,0 +1,17 @@
+{
+  "cxxNamespace": ["hapticpro"],
+  "ios": {
+    "iosModuleName": "HapticPro"
+  },
+  "android": {
+    "androidNamespace": ["hapticpro"],
+    "androidCxxLibName": "hapticpro"
+  },
+  "autolinking": {
+    "HapticPro": {
+      "swift": "HapticPro",
+      "kotlin": "HapticPro"
+    }
+  },
+  "ignorePaths": ["node_modules"]
+}
