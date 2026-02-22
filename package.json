@@ -6,17 +6,16 @@
   "types": "./lib/typescript/src/index.d.ts",
   "sideEffects": false,
   "files": [
-    "lib",
-    "android",
-    "ios",
-    "cpp",
-    "nitrogen",
-    "nitro.json",
-    "*.podspec",
-    "react-native.config.js",
-    "LICENSE",
-    "README.md"
-  ],
+  "lib",
+  "android",
+   "nitrogen",
+  "ios",
+  "cpp",
+  "*.podspec",
+  "react-native.config.js",
+  "LICENSE",
+  "README.md"
+],
   "scripts": {
     "example": "yarn workspace react-native-haptic-pro-example",
     "dev:android": "rm -f react-native-haptic-pro-*.tgz && npx nitrogen && npm run prepare && npm pack && TAR=$(ls react-native-haptic-pro-*.tgz | tail -n 1) && cd example && rm -rf node_modules/react-native-haptic-pro && npm install ../$TAR && npx react-native run-android",

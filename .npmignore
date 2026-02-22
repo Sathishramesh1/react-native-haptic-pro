@@ -36,3 +36,9 @@ lefthook.yml
 
 # Pack files
 *.tgz
+
+android/.cxx
+android/build
+**/.cxx
+**/build
+example
