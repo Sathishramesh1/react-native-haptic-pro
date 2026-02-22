@@ -1,7 +1,7 @@
 # react-native-haptic-pro
 
 A small, high-quality React Native library that exposes native haptic and vibration capabilities via Nitro Modules for iOS (Swift) and Android (Kotlin).
-
+Bridge-less native haptics for React Native using Nitro Modules.
 This README helps new users get started quickly, understand the public API, run the example app, and contribute.
 
 ## Why use react-native-haptic-pro
@@ -20,6 +20,9 @@ This README helps new users get started quickly, understand the public API, run 
 ## Installation
 
 Install the library and the Nitro Modules runtime:
+⚠️ This library requires `react-native-nitro-modules`.
+ Make sure you install it alongside this package:
+
 
 ```bash
 npm install react-native-haptic-pro react-native-nitro-modules
@@ -99,8 +102,12 @@ Open `example/src/App.tsx` to see usage.
 
 ## Compatibility
 
+- React Native: 0.82 – 0.83
+- react-native-nitro-modules: ^0.33.x
 - Platforms: iOS and Android
-- React Native: works with modern RN versions (0.60+). Older RN versions may require manual linking.
+
+Because this library relies on Nitro Modules and React Native internal APIs,
+using unsupported React Native versions may result in build-time errors.
 
 ## Contributing
 
@@ -127,3 +134,30 @@ MIT — see the `LICENSE` file.
 ## Credits
 
 Built with Nitro Modules and the `react-native-builder-bob` scaffold.
+
+⚡ Performance
+
+react-native-haptic-pro is built using Nitro Modules (JSI-based architecture), which avoids the legacy React Native bridge.
+
+Traditional bridge-based modules serialize calls asynchronously between JavaScript and native code. Nitro uses direct JSI bindings to invoke native implementations without JSON serialization or bridge queue overhead.
+
+🧵 Bridge vs. JSI (Conceptual Difference)
+Module Type	Communication Model	Invocation Overhead
+Standard Bridge Modules	Async JSON bridge	Higher
+RN Vibration API	Async bridge	Higher
+Nitro Haptic Pro	Direct JSI binding	Lower
+🚀 Why This Matters
+
+By bypassing the legacy bridge, Nitro-based modules:
+
+Reduce JavaScript ↔ native invocation overhead
+
+Avoid JSON serialization costs
+
+Eliminate bridge queue congestion
+
+Provide more predictable timing for high-frequency calls
+
+Note: Haptic feedback is ultimately hardware-bound. The performance improvement primarily affects the call invocation overhead rather than the vibration duration itself.
+
+For most apps, the difference may not be visually measurable — but architecturally, Nitro ensures cleaner and more efficient native integration.
