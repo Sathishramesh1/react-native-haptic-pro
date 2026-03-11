@@ -110,22 +110,9 @@ Because this library relies on Nitro Modules and React Native internal APIs,
 using unsupported React Native versions may result in build-time errors.
 
 ## Contributing
-
 Contributions are welcome. Please read `CONTRIBUTING.md` and `CODE_OF_CONDUCT.md` before opening PRs.
 
-High-impact contribution ideas:
-
-- Add animated GIFs/screenshots showing the haptic effects.
-- Improve the example app and provide copy-paste snippets.
-- Add cross-platform tests and CI.
-- Curate `good first issue` and `help wanted` issues to attract contributors.
-
-## Tips to increase GitHub adoption
-
-- Add a short demo GIF at the top of the README.
-- Add topics to the GitHub repo: `react-native`, `haptics`, `vibration`.
-- Keep the example minimal and copy-paste friendly.
-- Write a short `SHOWCASE.md` with real-world use cases.
+For ideas on where to help (example improvements, GIFs, tests, and curated issues), see `CONTRIBUTING.md`.
 
 ## License
 

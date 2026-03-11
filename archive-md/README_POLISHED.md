@@ -115,14 +115,7 @@ High-impact contribution ideas:
 - Add animated GIFs/screenshots showing the haptic effects.
 - Improve the example app and provide copy-paste snippets.
 - Add cross-platform tests and CI.
-- Curate `good first issue` and `help wanted` issues to attract contributors.
 
-## Tips to increase GitHub adoption
-
-- Add a short demo GIF at the top of the README.
-- Add topics to the GitHub repo: `react-native`, `haptics`, `vibration`.
-- Keep the example minimal and copy-paste friendly.
-- Write a short `SHOWCASE.md` with real-world use cases.
 
 ## License
 
@@ -131,7 +124,3 @@ MIT — see the `LICENSE` file.
 ## Credits
 
 Built with Nitro Modules and the `react-native-builder-bob` scaffold.
-
----
-
-If you want, I can replace the repository root `README.md` with this polished version, add a short demo GIF to the `example/` app, or create a `SHOWCASE.md` with ready-to-run examples. Tell me which you'd like next.

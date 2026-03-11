@@ -4,6 +4,20 @@ Contributions are always welcome, no matter how large or small!
 
 We want this community to be friendly and respectful to each other. Please follow it in all your interactions with the project. Before contributing, please read the [code of conduct](./CODE_OF_CONDUCT.md).
 
+## High-impact contribution ideas
+
+- Add animated GIFs/screenshots showing the haptic effects (place them in `example/assets` or `example/README.md`).
+- Improve the example app and provide short, copy-paste snippets that demonstrate common use cases.
+- Add cross-platform tests and CI (unit tests + lightweight integration tests for the example app).
+- Curate `good-first-issue` and `help-wanted` issues with a short description and reproduction steps to onboard contributors.
+
+## Tips to increase GitHub adoption
+
+- Add a short demo GIF to the root `README.md` or `example/README.md` to show the haptic effects quickly.
+- Add repository topics (e.g., `react-native`, `haptics`, `vibration`) on GitHub to improve discoverability.
+- Keep the example minimal and copy-paste friendly so newcomers can try the library quickly.
+- Consider adding a `SHOWCASE.md` with real-world snippets and short recipes for common patterns.
+
 ## Development workflow
 
 This project is a monorepo managed using [Yarn workspaces](https://yarnpkg.com/features/workspaces). It contains the following packages:
